@@ -3,12 +3,16 @@ import { View, Text, StyleSheet } from 'react-native'
 
 const DeckList = () => {
     return (
-        <View>
+        <View style={styles.container}>
             <Text>Deck List</Text>
         </View>
     )
 }
 
-const styles = StyleSheet.create({})
+const styles = StyleSheet.create({
+    container: {
+        margin: 10
+    }
+})
 
 export default DeckList;
