@@ -1,14 +1,16 @@
-import { StatusBar } from 'expo-status-bar';
-import React from 'react';
-import { StyleSheet, Text, View } from 'react-native';
-import HomeScreen from './src/screens/HomeScreen';
+import { createAppContainer } from "react-navigation";
+import { createStackNavigator } from "react-navigation-stack";
+import DeckList from "./src/screens/DeckList";
 
-export default function App() {
-  return (
-    <View>
-      <HomeScreen />
-    </View>
-  );
-}
+const navigator = createStackNavigator({
+  HomeScreen: DeckList
+}, {
+  initialRouteName: 'HomeScreen',
+  defaultNavigationOptions: {
+    title: 'App'
+  }
+})
 
-const styles = StyleSheet.create({})
+i
+
+export default createAppContainer(navigator)
