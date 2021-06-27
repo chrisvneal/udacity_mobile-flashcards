@@ -11,6 +11,6 @@ const navigator = createStackNavigator({
   }
 })
 
-i
+
 
 export default createAppContainer(navigator)
